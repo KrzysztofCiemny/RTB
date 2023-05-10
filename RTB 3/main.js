@@ -32,10 +32,10 @@ const countDown = () => {
   secondsOutput.innerText =
     secondsTillEnd < 10 ? `0${secondsTillEnd}` : secondsTillEnd;
 
-  if (daysTillEnd <= 1) {
+  if (daysTillEnd < 1) {
     daysOutput.style.display = "none";
   }
-  if (hoursTillEnd <= 1) {
+  if (daysTillEnd < 1 && hoursTillEnd <= 1) {
     hoursOutput.style.display = "none";
   }
 };
